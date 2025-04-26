@@ -73,22 +73,19 @@ def main():
     fname = f"Main.{ext}"
     path = os.path.join(base, fname)
 
-    # 1) 코드 파일 생성 또는 복사
-    if os.path.exists(path):
+    # 1) 코드 파일 생성 또는 복사 (복사 모드면 덮어쓰기)
+    overwrite = (len(sys.argv) == 4 and os.path.isfile(sys.argv[3]))
+    if os.path.exists(path) and not overwrite:
+        # path가 있고, 복사 모드가 아니면 스킵
         print(">> File already exists, skipping template.")
     else:
-        # (a) 세 번째 인자로 원본 코드 파일 경로를 받았다면, 해당 파일을 복사
-        if len(sys.argv) == 4:
+        # overwrite=True 면 (len==4이고 src 파일이 실제 있으면) 복사
+        if overwrite:
             src = sys.argv[3]
+            print(f">> Overwriting with your code from {src}")
             import shutil
-            if os.path.isfile(src):
-                print(f">> Copying your code from {src}")
-                shutil.copy(src, path)
-            else:
-                print(f">> Warning: source file {src} not found, writing template.")
-                with open(path, "w", encoding="utf-8") as f:
-                    f.write(TEMPLATE[ext].format(pid=pid, title=title, tier=tier))
-        # (b) 별도 인자가 없으면 기존처럼 템플릿 생성
+            shutil.copy(src, path)
+        # 그 외에는 템플릿 생성
         else:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(TEMPLATE[ext].format(pid=pid, title=title, tier=tier))
