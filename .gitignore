@@ -1,0 +1,16 @@
+# 1) 일단 모든 파일·폴더 무시
+*
+
+# 2) .gitignore 자신은 추적
+!.gitignore
+
+# 3) 루트의 README.md 는 추적
+!README.md
+
+# 4) BOJ 폴더와 그 하위 모든 파일을 추적
+!BOJ/
+!BOJ/**
+
+# 5) 스크립트 폴더도 만약 필요하다면 추적
+!scripts/
+!scripts/**
