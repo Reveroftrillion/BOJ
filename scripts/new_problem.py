@@ -59,8 +59,8 @@ def fetch_metadata(pid):
     return j["titleKo"], tier
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: new_problem.py <problemId> <lang(py|cpp)>", file=sys.stderr)
+    if len(sys.argv) < 3 or len(sys.argv) > 4:
+        print("Usage: new_problem.py <problemId> <lang(py|cpp)> [<srcCodePath>]", file=sys.stderr)
         sys.exit(1)
 
     pid, lang = sys.argv[1], sys.argv[2]
@@ -73,12 +73,25 @@ def main():
     fname = f"Main.{ext}"
     path = os.path.join(base, fname)
 
-    # 1) 코드 파일 생성 (템플릿)
-    if not os.path.exists(path):
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(TEMPLATE[ext].format(pid=pid, title=title, tier=tier))
+    # 1) 코드 파일 생성 또는 복사
+    if os.path.exists(path):
+        print(">> File already exists, skipping template.")
     else:
-        print(">> File exists, skipping template.")
+        # (a) 세 번째 인자로 원본 코드 파일 경로를 받았다면, 해당 파일을 복사
+        if len(sys.argv) == 4:
+            src = sys.argv[3]
+            import shutil
+            if os.path.isfile(src):
+                print(f">> Copying your code from {src}")
+                shutil.copy(src, path)
+            else:
+                print(f">> Warning: source file {src} not found, writing template.")
+                with open(path, "w", encoding="utf-8") as f:
+                    f.write(TEMPLATE[ext].format(pid=pid, title=title, tier=tier))
+        # (b) 별도 인자가 없으면 기존처럼 템플릿 생성
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(TEMPLATE[ext].format(pid=pid, title=title, tier=tier))
 
     # 2) README.md 업데이트
     readme = os.path.join(os.getcwd(), "README.md")
