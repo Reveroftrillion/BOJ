@@ -4,6 +4,8 @@ import sys
 import datetime
 import requests
 
+# 사용방법 : 터미널 창에 Coding에서 python scripts\new_problem.py 문제번호 언어 언어\BOJ_문제번호.언어 를 입력
+
 # solved.ac API
 API = "https://solved.ac/api/v3/problem/show"
 
