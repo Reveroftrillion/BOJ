@@ -7,3 +7,4 @@
 | 2557 | Hello World | Bronze V | cpp | 2025-04-27 |
 | 2476 | 주사위 게임 | Bronze III | cpp | 2025-04-27 |
 | 1008 | A/B | Bronze V | cpp | 2025-04-27 |
+| 1789 | 수들의 합 | Silver V | cpp | 2025-04-27 |
