@@ -3,10 +3,10 @@ using namespace std;
 
 int main()
 {
-    int num;
+    long long num;
     cin >> num;
-    int sum = 0;
-    int i = 1;
+    long long sum = 0;
+    long long i = 1;
     while (num >= i)
     {
         num -= i;
