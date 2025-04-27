@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    long long num;
+    long long num; // 자료형 범위가 S(1 ≤ S ≤ 4,294,967,295)이니까 int로는 범위가 터진다.
     cin >> num;
     long long sum = 0;
     long long i = 1;
