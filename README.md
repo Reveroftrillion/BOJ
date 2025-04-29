@@ -11,3 +11,4 @@
 | 7567 | 그릇 | Bronze II | cpp | 2025-04-28 |
 | 5063 | TGN | Bronze III | cpp | 2025-04-28 |
 | 10102 | 개표 | Bronze III | cpp | 2025-04-28 |
+| 10886 | 0 = not cute / 1 = cute | Bronze III | cpp | 2025-04-29 |
