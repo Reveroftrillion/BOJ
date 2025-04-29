@@ -18,3 +18,4 @@
 | 9506 | 약수들의 합 | Bronze I | cpp | 2025-04-29 |
 | 10162 | 전자레인지 | Bronze III | cpp | 2025-04-29 |
 | 10103 | 주사위 게임 | Bronze III | cpp | 2025-04-29 |
+| 11557 | Yangjojang of The Year | Bronze I | cpp | 2025-04-29 |
