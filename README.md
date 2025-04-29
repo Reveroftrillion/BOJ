@@ -20,3 +20,4 @@
 | 10103 | 주사위 게임 | Bronze III | cpp | 2025-04-29 |
 | 11557 | Yangjojang of The Year | Bronze I | cpp | 2025-04-29 |
 | 2440 | 별 찍기 - 3 | Bronze IV | cpp | 2025-04-29 |
+| 2441 | 별 찍기 - 4 | Bronze III | cpp | 2025-04-29 |
