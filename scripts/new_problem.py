@@ -95,18 +95,32 @@ def main():
     # 2) README.md 업데이트
     readme = os.path.join(os.getcwd(), "README.md")
     today = datetime.date.today().isoformat()
-    line = f"| {pid} | {title} | {tier} | {lang} | {today} |\n"
+    new_line = f"| {pid} | {title} | {tier} | {lang} | {today} |\n"
     if os.path.exists(readme):
-        with open(readme, "r+", encoding="utf-8") as f:
-            content = f.read()
-            if f"| {pid} |" not in content:
-                f.write(line)
+        # 1) 파일 읽기
+        with open(readme, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+       # 2) 헤더(첫 두 줄) 분리
+        header = lines[:2]
+        # 3) 기존 본문(3번째 줄 이후)을 가져와서, 빈 줄 제거
+        body = [l for l in lines[2:] if l.strip().startswith("|")]
+        # 4) 새 항목 중복 검사 후 추가
+        if not any(l.startswith(f"| {pid} |") for l in body):
+            body.append(new_line)
+        # 5) 날짜 기준 내림차순 정렬 (각 줄의 마지막 컬럼)
+        def extract_date(line):
+            return line.strip().split("|")[-2].strip()
+        body.sort(key=extract_date, reverse=True)
+        # 6) 파일 덮어쓰기
+        with open(readme, "w", encoding="utf-8") as f:
+            f.writelines(header + body)
     else:
+        # 파일이 없을 때(최초 실행)
         with open(readme, "w", encoding="utf-8") as f:
             f.write("# BOJ 풀이 기록\n\n")
             f.write("| 번호 | 제목 | 티어 | 언어 | 날짜 |\n")
             f.write("|:---:|:---|:---:|:---:|:---|\n")
-            f.write(line)
+            f.write(new_line)
 
     # 3) Git에 add & commit
     os.system(f'git add "{base}" "{readme}"')
