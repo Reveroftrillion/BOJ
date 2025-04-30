@@ -6,6 +6,7 @@
 | 1977 | 완전제곱수 | Bronze II | cpp | 2025-04-30 |
 | 5635 | 생일 | Silver V | cpp | 2025-04-30 |
 | 1408 | 24 | Bronze II | cpp | 2025-04-30 |
+| 2748 | 피보나치 수 2 | Bronze I | cpp | 2025-04-30 |
 | 10886 | 0 = not cute / 1 = cute | Bronze III | cpp | 2025-04-29 |
 | 10988 | 팰린드롬인지 확인하기 | Bronze III | cpp | 2025-04-29 |
 | 5717 | 상근이의 친구들 | Bronze V | cpp | 2025-04-29 |
