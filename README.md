@@ -19,6 +19,7 @@
 | 10809 | 알파벳 찾기 | Bronze II | cpp | 2025-05-03 |
 | 2920 | 음계 | Bronze II | cpp | 2025-05-03 |
 | 10250 | ACM 호텔 | Bronze III | cpp | 2025-05-03 |
+| 31403 | $A + B - C$ | Bronze IV | cpp | 2025-05-03 |
 | 2442 | 별 찍기 - 5 | Bronze III | cpp | 2025-05-02 |
 | 2443 | 별 찍기 - 6 | Bronze III | cpp | 2025-05-02 |
 | 2444 | 별 찍기 - 7 | Bronze III | cpp | 2025-05-02 |
