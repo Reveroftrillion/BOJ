@@ -6,6 +6,7 @@
 | 2010 | 플러그 | Bronze III | cpp | 2025-05-03 |
 | 10995 | 별 찍기 - 20 | Bronze III | cpp | 2025-05-03 |
 | 9085 | 더하기 | Bronze III | cpp | 2025-05-03 |
+| 2576 | 홀수 | Bronze III | cpp | 2025-05-03 |
 | 2442 | 별 찍기 - 5 | Bronze III | cpp | 2025-05-02 |
 | 2443 | 별 찍기 - 6 | Bronze III | cpp | 2025-05-02 |
 | 2444 | 별 찍기 - 7 | Bronze III | cpp | 2025-05-02 |
