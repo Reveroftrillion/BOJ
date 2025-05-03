@@ -23,6 +23,7 @@
 | 16430 | 제리와 톰 | Bronze V | cpp | 2025-05-03 |
 | 24568 | Cupcake Party | Bronze V | cpp | 2025-05-03 |
 | 32154 | SUAPC 2024 Winter | Bronze V | cpp | 2025-05-03 |
+| 4153 | 직각삼각형 | Bronze III | cpp | 2025-05-03 |
 | 2442 | 별 찍기 - 5 | Bronze III | cpp | 2025-05-02 |
 | 2443 | 별 찍기 - 6 | Bronze III | cpp | 2025-05-02 |
 | 2444 | 별 찍기 - 7 | Bronze III | cpp | 2025-05-02 |
