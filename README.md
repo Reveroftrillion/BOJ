@@ -5,6 +5,7 @@
 | 17356 | 욱 제 | Bronze IV | cpp | 2025-05-04 |
 | 16673 | 고려대학교에는 공식 와인이 있다 | Bronze III | cpp | 2025-05-04 |
 | 13484 | Tarifa | Bronze III | cpp | 2025-05-04 |
+| 31945 | 정육면체의 네 꼭짓점 | Bronze II | cpp | 2025-05-04 |
 | 5522 | 카드 게임 | Bronze V | cpp | 2025-05-03 |
 | 2010 | 플러그 | Bronze III | cpp | 2025-05-03 |
 | 10995 | 별 찍기 - 20 | Bronze III | cpp | 2025-05-03 |
