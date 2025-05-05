@@ -5,6 +5,7 @@
 | 1181 | 단어 정렬 | Silver V | cpp | 2025-05-05 |
 | 30802 | 웰컴 키트 | Bronze III | cpp | 2025-05-05 |
 | 2798 | 블랙잭 | Bronze II | cpp | 2025-05-05 |
+| 1259 | 팰린드롬수 | Bronze I | cpp | 2025-05-05 |
 | 17356 | 욱 제 | Bronze IV | cpp | 2025-05-04 |
 | 16673 | 고려대학교에는 공식 와인이 있다 | Bronze III | cpp | 2025-05-04 |
 | 13484 | Tarifa | Bronze III | cpp | 2025-05-04 |
