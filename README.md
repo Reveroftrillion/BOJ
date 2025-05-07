@@ -6,6 +6,7 @@
 | 15829 | Hashing | Bronze II | cpp | 2025-05-07 |
 | 11050 | 이항 계수 1 | Bronze I | cpp | 2025-05-07 |
 | 2231 | 분해합 | Bronze II | cpp | 2025-05-07 |
+| 2869 | 달팽이는 올라가고 싶다 | Bronze I | cpp | 2025-05-07 |
 | 5597 | 과제 안 내신 분..? | Bronze III | cpp | 2025-05-06 |
 | 2738 | 행렬 덧셈 | Bronze III | cpp | 2025-05-06 |
 | 9086 | 문자열 | Bronze V | cpp | 2025-05-06 |
