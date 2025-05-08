@@ -5,6 +5,7 @@
 | 5622 | 다이얼 | Bronze II | cpp | 2025-05-08 |
 | 15439 | 베라의 패션 | Bronze IV | cpp | 2025-05-08 |
 | 24723 | 녹색거탑 | Bronze IV | cpp | 2025-05-08 |
+| 1010 | 다리 놓기 | Silver V | cpp | 2025-05-08 |
 | 2292 | 벌집 | Bronze II | cpp | 2025-05-07 |
 | 15829 | Hashing | Bronze II | cpp | 2025-05-07 |
 | 11050 | 이항 계수 1 | Bronze I | cpp | 2025-05-07 |
