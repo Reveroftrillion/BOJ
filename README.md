@@ -4,6 +4,7 @@
 |:---:|:---|:---:|:---:|:---|
 | 1920 | 수 찾기 | Silver IV | cpp | 2025-05-14 |
 | 26592 | Triangle Height | Bronze IV | cpp | 2025-05-14 |
+| 33277 | 국방시계 | Bronze III | cpp | 2025-05-14 |
 | 1316 | 그룹 단어 체커 | Silver V | cpp | 2025-05-13 |
 | 5598 | 카이사르 암호 | Bronze II | cpp | 2025-05-13 |
 | 11655 | ROT13 | Bronze I | cpp | 2025-05-13 |
