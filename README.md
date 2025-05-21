@@ -4,6 +4,7 @@
 |:---:|:---|:---:|:---:|:---|
 | 24606 | Double Password | Bronze III | cpp | 2025-05-22 |
 | 13420 | 사칙연산 | Bronze II | cpp | 2025-05-22 |
+| 17466 | N! mod P (1) | Bronze II | cpp | 2025-05-22 |
 | 12756 | 고급 여관 | Bronze III | cpp | 2025-05-21 |
 | 1929 | 소수 구하기 | Silver III | cpp | 2025-05-20 |
 | 1193 | 분수찾기 | Silver V | cpp | 2025-05-20 |
