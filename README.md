@@ -6,6 +6,7 @@
 | 18917 | 수열과 쿼리 38 | Silver III | cpp | 2025-05-23 |
 | 1966 | 프린터 큐 | Silver III | cpp | 2025-05-23 |
 | 1654 | 랜선 자르기 | Silver II | cpp | 2025-05-23 |
+| 14646 | 욱제는 결정장애야!! | Silver V | cpp | 2025-05-23 |
 | 24606 | Double Password | Bronze III | cpp | 2025-05-22 |
 | 13420 | 사칙연산 | Bronze II | cpp | 2025-05-22 |
 | 17466 | N! mod P (1) | Bronze II | cpp | 2025-05-22 |
