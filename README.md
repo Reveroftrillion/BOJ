@@ -4,6 +4,7 @@
 |:---:|:---|:---:|:---:|:---|
 | 32246 | 빙고 막기 | Bronze III | cpp | 2025-06-05 |
 | 4690 | 완전 세제곱 | Bronze III | cpp | 2025-06-05 |
+| 10864 | 친구 | Bronze II | cpp | 2025-06-05 |
 | 17945 | 통학의 신 | Bronze III | cpp | 2025-06-04 |
 | 10426 | 기념일 2 | Bronze I | cpp | 2025-06-03 |
 | 15803 | PLAYERJINAH’S BOTTLEGROUNDS | Silver V | cpp | 2025-06-03 |
