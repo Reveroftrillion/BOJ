@@ -12,6 +12,7 @@
 | 1427 | 소트인사이드 | Silver V | cpp | 2025-06-05 |
 | 2587 | 대표값2 | Bronze II | cpp | 2025-06-05 |
 | 5073 | 삼각형과 세 변 | Bronze III | cpp | 2025-06-05 |
+| 18870 | 좌표 압축 | Silver II | cpp | 2025-06-05 |
 | 17945 | 통학의 신 | Bronze III | cpp | 2025-06-04 |
 | 10426 | 기념일 2 | Bronze I | cpp | 2025-06-03 |
 | 15803 | PLAYERJINAH’S BOTTLEGROUNDS | Silver V | cpp | 2025-06-03 |
