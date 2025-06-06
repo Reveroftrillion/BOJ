@@ -2,25 +2,11 @@
 import os
 import sys
 import datetime
-import requests
+import shutil
 
-# 사용방법 : 터미널 창에 Coding에서 python scripts\new_problem.py 문제번호 언어 언어\BOJ_문제번호.언어 를 입력
-
-# solved.ac API
-API = "https://solved.ac/api/v3/problem/show"
-
-# level(0~30) → 티어 문자열 매핑 테이블
-TIER_NAMES = [
-    "Unrated",
-    "Bronze V", "Bronze IV", "Bronze III", "Bronze II", "Bronze I",
-    "Silver V", "Silver IV", "Silver III", "Silver II", "Silver I",
-    "Gold V",   "Gold IV",   "Gold III",   "Gold II",   "Gold I",
-    "Platinum V", "Platinum IV", "Platinum III", "Platinum II", "Platinum I",
-    "Diamond V",  "Diamond IV",  "Diamond III",  "Diamond II",  "Diamond I",
-    "Ruby"
-]
-
-# 문제별 코드 템플릿
+# =========================================
+#     템플릿 설정: 필요에 맞춰 수정하세요
+# =========================================
 TEMPLATE = {
     "py": """\
 # {pid} {title} [{tier}]
@@ -29,7 +15,7 @@ import sys
 def main():
     data = sys.stdin.read().split()
     # 여기에 문제 풀이 코드를 작성하세요
-    # 예시: print(sum(map(int, data)))
+    # 예) print(sum(map(int, data)))
 
 if __name__ == "__main__":
     main()
@@ -43,88 +29,192 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int a, b;
-    if (!(cin >> a >> b)) return 0;
-    cout << (a + b);
+    // 여기에 문제 풀이 코드를 작성하세요
+    // 예) int a, b; if (cin >> a >> b) cout << (a + b);
+
     return 0;
 }
 """
 }
+# =========================================
+#              END OF TEMPLATE
+# =========================================
 
-def fetch_metadata(pid):
-    """solved.ac에서 제목과 레벨(티어)을 가져와 문자열로 반환"""
-    resp = requests.get(API, params={"problemId": pid})
-    resp.raise_for_status()
-    j = resp.json()
-    level = j["level"]
-    tier = TIER_NAMES[level]
-    return j["titleKo"], tier
+
+def prompt_input(prompt_text):
+    """
+    사용자에게 프롬프트를 띄워서 입력을 받고, strip() 해서 반환합니다.
+    """
+    try:
+        return input(prompt_text).strip()
+    except EOFError:
+        return ""
+
+
+def fetch_metadata_manual(pid):
+    """
+    solved.ac API 호출 대신, 사용자 터미널에서
+    문제 제목과 티어(난이도)를 직접 입력받습니다.
+    """
+    title = ""
+    while not title:
+        title = prompt_input(f"문제 {pid}의 제목을 입력하세요 (예: 직사각형): ")
+        if not title:
+            print("⚠️  제목을 비워 둘 수 없습니다. 반드시 입력해주세요.")
+
+    tier = ""
+    while not tier:
+        tier = prompt_input(f"문제 {pid}의 티어를 입력하세요 (예: Bronze V): ")
+        if not tier:
+            print("⚠️  티어를 비워 둘 수 없습니다. 반드시 입력해주세요.")
+
+    return title, tier
+
+
+def create_or_copy_code(pid, title, tier, lang, src_path=None):
+    """
+    BOJ/<pid>/Main.<ext> 파일을 생성하거나,
+    이미 있는 소스 파일(src_path)이 주어지면 그대로 복사하여 덮어씁니다.
+    """
+    repo_root = os.getcwd()
+    problem_dir = os.path.join(repo_root, "BOJ", pid)
+    os.makedirs(problem_dir, exist_ok=True)
+
+    ext = "py" if lang == "py" else "cpp"
+    dst_fname = f"Main.{ext}"
+    dst_path = os.path.join(problem_dir, dst_fname)
+
+    # (1) 이미 파일이 존재하고, src_path가 주어지지 않았다면 스킵
+    if os.path.exists(dst_path) and not (src_path and os.path.isfile(src_path)):
+        print(f"⚠️  {dst_path} 파일이 이미 존재하여 템플릿 생성은 건너뜁니다.")
+        return
+
+    # (2) src_path가 실제 파일이면 복사(덮어쓰기)
+    if src_path and os.path.isfile(src_path):
+        shutil.copy(src_path, dst_path)
+        print(f"📝 {pid} 코드 파일을 '{src_path}'에서 복사하여 → '{dst_path}'로 덮어쓰기했습니다.")
+        return
+
+    # (3) 그 외에는 언어별 템플릿 생성
+    tpl = TEMPLATE.get(lang)
+    if tpl is None:
+        print("❌ 지원하지 않는 언어입니다. 'py' 또는 'cpp'만 허용됩니다.")
+        sys.exit(1)
+
+    with open(dst_path, "w", encoding="utf-8") as f:
+        f.write(tpl.format(pid=pid, title=title, tier=tier))
+    print(f"🆕 {pid} 코드 파일 생성 완료: '{dst_path}'")
+
+
+def update_readme(pid, title, tier, lang):
+    """
+    루트에 있는 README.md를 열어서,
+    Markdown 테이블의 구분자 줄("|:---")을 찾아 그 아래에 새 항목을 삽입합니다.
+    기존 항목에 같은 pid가 있으면 삽입하지 않습니다.
+    """
+    repo_root = os.getcwd()
+    readme_path = os.path.join(repo_root, "README.md")
+    today = datetime.date.today().isoformat()
+    # Markdown 테이블용 한 줄: "문제번호 제목 티어 언어 날짜"
+    new_line = f"| {pid} | {title} | {tier} | {lang} | {today} |\n"
+
+    if os.path.exists(readme_path):
+        # (1) README.md 전체 읽기
+        with open(readme_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+
+        # (2) Markdown 테이블 구분자("|:---")가 있는 줄 인덱스를 찾는다
+        header_sep_idx = None
+        for idx, line in enumerate(lines):
+            if line.strip().startswith("|:---"):
+                header_sep_idx = idx
+                break
+
+        if header_sep_idx is None:
+            print("❌ README.md에서 '|:---' 테이블 구분자 줄을 찾을 수 없습니다. 형식을 확인해주세요.")
+            sys.exit(1)
+
+        # (3) 구분자 바로 아래(인덱스 header_sep_idx+1)부터가 테이블 본문
+        #     같은 pid가 이미 존재하는지 검사
+        for body_line in lines[header_sep_idx + 1:]:
+            # body_line 예시: "| 1855 | 암호 | Bronze I | cpp | 2025-06-06 |\n"
+            # split()[1]이 '1855'가 되므로, body_line.split()[1] == pid 로 비교
+            parts = body_line.strip().split()
+            if len(parts) >= 2 and parts[1] == pid:
+                print(f"⚠️  README.md에 이미 {pid}번 항목이 있습니다. 삽입을 건너뜁니다.")
+                return
+
+        # (4) 실제로 삽입: header_sep_idx+1 위치에 new_line을 끼워 넣는다
+        new_contents = (
+            lines[: header_sep_idx + 1]
+            + [new_line]
+            + lines[header_sep_idx + 1 :]
+        )
+
+        # (5) 날짜 순(내림차순)으로 정렬하려면, 삽입 후 아래 과정을 추가해야 하지만,
+        #     여기서는 “항상 가장 위에 삽입”하는 방식으로 처리합니다.
+        #     → 만약 “날짜 내림차순”으로 유지하고 싶다면, 아래 예시처럼 body만 따로 정렬할 수 있습니다:
+        #
+        #     body = new_contents[header_sep_idx+1:]
+        #     # body 줄들 중에서 날짜(마지막 칸)를 기준으로 내림차순 정렬
+        #     def extract_date(line):
+        #         cols = [c.strip() for c in line.split("|")]
+        #         return cols[-2]  # 마지막에서 두 번째 칸이 날짜
+        #     body_sorted = sorted(body, key=extract_date, reverse=True)
+        #     new_contents = new_contents[: header_sep_idx + 1] + body_sorted
+        #
+        #     여기서는 단순히 “맨 위에 새로 추가” 기법만 쓰겠습니다.
+
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.writelines(new_contents)
+
+        print(f"✅ README.md 업데이트 완료: {pid} {title} [{tier}] ({lang}) {today}")
+
+    else:
+        # README.md가 없으면 새로 생성
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write("# 백준 풀이 기록\n\n")
+            f.write("| 번호 | 제목 | 난이도 | 언어 | 날짜 |\n")
+            f.write("|:---:|:---|:---:|:---:|:---|\n")
+            f.write(new_line)
+        print(f"🆕 README.md를 새로 생성하고, 첫 항목으로 {pid}를 추가했습니다.")
+
 
 def main():
+    # -----------------------------------------------
+    # 1) 커맨드 라인 인자 검사
+    # -----------------------------------------------
     if len(sys.argv) < 3 or len(sys.argv) > 4:
         print("Usage: new_problem.py <problemId> <lang(py|cpp)> [<srcCodePath>]", file=sys.stderr)
         sys.exit(1)
 
-    pid, lang = sys.argv[1], sys.argv[2]
-    title, tier = fetch_metadata(pid)
+    pid = sys.argv[1]
+    lang = sys.argv[2]
+    src_path = sys.argv[3] if len(sys.argv) == 4 else None
 
-    # BOJ/<pid>/Main.ext 경로 준비
-    base = os.path.join(os.getcwd(), "BOJ", pid)
-    os.makedirs(base, exist_ok=True)
-    ext = "py" if lang == "py" else "cpp"
-    fname = f"Main.{ext}"
-    path = os.path.join(base, fname)
+    # -----------------------------------------------
+    # 2) 사용자에게 제목/티어 입력받기
+    # -----------------------------------------------
+    title, tier = fetch_metadata_manual(pid)
 
-    # 1) 코드 파일 생성 또는 복사 (복사 모드면 덮어쓰기)
-    overwrite = (len(sys.argv) == 4 and os.path.isfile(sys.argv[3]))
-    if os.path.exists(path) and not overwrite:
-        # path가 있고, 복사 모드가 아니면 스킵
-        print(">> File already exists, skipping template.")
-    else:
-        # overwrite=True 면 (len==4이고 src 파일이 실제 있으면) 복사
-        if overwrite:
-            src = sys.argv[3]
-            print(f">> Overwriting with your code from {src}")
-            import shutil
-            shutil.copy(src, path)
-        # 그 외에는 템플릿 생성
-        else:
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(TEMPLATE[ext].format(pid=pid, title=title, tier=tier))
+    # -----------------------------------------------
+    # 3) 코드 파일 생성 or 복사
+    # -----------------------------------------------
+    create_or_copy_code(pid, title, tier, lang, src_path)
 
-    # 2) README.md 업데이트
-    readme = os.path.join(os.getcwd(), "README.md")
-    today = datetime.date.today().isoformat()
-    new_line = f"| {pid} | {title} | {tier} | {lang} | {today} |\n"
-    if os.path.exists(readme):
-        # 1) 파일 읽기
-        with open(readme, "r", encoding="utf-8") as f:
-            lines = f.readlines()
-       # 2) 헤더(첫 두 줄) 분리
-        header = lines[:2]
-        # 3) 기존 본문(3번째 줄 이후)을 가져와서, 빈 줄 제거
-        body = [l for l in lines[2:] if l.strip().startswith("|")]
-        # 4) 새 항목 중복 검사 후 추가
-        if not any(l.startswith(f"| {pid} |") for l in body):
-            body.append(new_line)
-        # 5) 날짜 기준 내림차순 정렬 (각 줄의 마지막 컬럼)
-        def extract_date(line):
-            return line.strip().split("|")[-2].strip()
-        body.sort(key=extract_date, reverse=True)
-        # 6) 파일 덮어쓰기
-        with open(readme, "w", encoding="utf-8") as f:
-            f.writelines(header + body)
-    else:
-        # 파일이 없을 때(최초 실행)
-        with open(readme, "w", encoding="utf-8") as f:
-            f.write("# BOJ 풀이 기록\n\n")
-            f.write("| 번호 | 제목 | 티어 | 언어 | 날짜 |\n")
-            f.write("|:---:|:---|:---:|:---:|:---|\n")
-            f.write(new_line)
+    # -----------------------------------------------
+    # 4) README.md 업데이트
+    # -----------------------------------------------
+    update_readme(pid, title, tier, lang)
 
-    # 3) Git에 add & commit
-    os.system(f'git add "{base}" "{readme}"')
+    # -----------------------------------------------
+    # 5) Git에 add & commit
+    # -----------------------------------------------
+    # Git 사용 중이라면 다음 두 줄을 활성화하여 자동 커밋까지 진행할 수 있습니다.
+    # 만약 “자동 커밋 불필요”하면 아래 두 줄을 주석 처리해주세요.
+    os.system(f'git add BOJ/{pid} README.md')
     os.system(f'git commit -m "Solve {pid} ({lang}) [{tier}]"')
+
 
 if __name__ == "__main__":
     main()
