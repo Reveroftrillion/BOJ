@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 23886 | 알프수 | Bronze I | cpp | 2025-06-28 |
 | 14551 | Card Game Contest | Bronze II | cpp | 2025-06-27 |
 | 14501 | 퇴사 | Silver III | cpp | 2025-06-26 |
 | 28455 | Union Maplestory | Bronze II | cpp | 2025-06-25 |
