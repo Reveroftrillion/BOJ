@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 32046 | Snacks within 300 Yen | Bronze III | cpp | 2025-07-04 |
 | 2309 | 일곱 난쟁이 | Bronze I | cpp | 2025-07-04 |
 | 15295 | Chanukah Challenge | Bronze III | cpp | 2025-07-03 |
 | 1463 | 1로 만들기 | Silver III | cpp | 2025-07-03 |
