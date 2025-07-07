@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 32653 | 흑백 요리사 | Silver IV | cpp | 2025-07-07 |
 | 14455 | Don't Be Last! | Silver IV | cpp | 2025-07-06 |
 | 2511 | 카드놀이 | Bronze II | cpp | 2025-07-05 |
 | 32046 | Snacks within 300 Yen | Bronze III | cpp | 2025-07-04 |
