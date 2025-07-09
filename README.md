@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 4649 | Tanning Salon | Silver V | cpp | 2025-07-09 |
 | 16283 | Farm | Bronze II | cpp | 2025-07-08 |
 | 32653 | 흑백 요리사 | Silver IV | cpp | 2025-07-07 |
 | 14455 | Don't Be Last! | Silver IV | cpp | 2025-07-06 |
