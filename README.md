@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 10866 | 덱 | Silver IV | py | 2025-07-30 |
 | 31306 | Is Y a Vowel? | Bronze IV | cpp | 2025-07-28 |
 | 1697 | 숨바꼭질 | Silver I | cpp | 2025-07-27 |
 | 6221 | The Bale Tower | Silver III | cpp | 2025-07-26 |
