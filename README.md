@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 21955 | Split | Bronze III | cpp | 2025-08-01 |
 | 13119 | Mountains Beyond Mountains | Silver V | cpp | 2025-07-31 |
 | 25594 | HG 음성기호 | Silver V | cpp | 2025-07-30 |
 | 10866 | 덱 | Silver IV | py | 2025-07-30 |
