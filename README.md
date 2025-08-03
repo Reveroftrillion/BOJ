@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 1812 | 사탕 | Silver IV | cpp | 2025-08-03 |
 | 11773 | ESEJ | Silver V | cpp | 2025-08-02 |
 | 21955 | Split | Bronze III | cpp | 2025-08-01 |
 | 13119 | Mountains Beyond Mountains | Silver V | cpp | 2025-07-31 |
