@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 9612 | Maximum Word Frequency | Silver IV | cpp | 2025-08-07 |
 | 26148 | 세로 달력 | Bronze I | cpp | 2025-08-06 |
 | CPP | 항해 | Silver V | 32200 | 2025-08-06 |
 | 1260 | DFS와 BFS | Silver II | cpp | 2025-08-05 |
