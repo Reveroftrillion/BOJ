@@ -2,10 +2,11 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 2644 | 촌수 계산 | Silver II | cpp | 2025-08-08 |
 | 31589 | 포도주 시음 | Silver III | cpp | 2025-08-08 |
 | 9612 | Maximum Word Frequency | Silver IV | cpp | 2025-08-07 |
 | 26148 | 세로 달력 | Bronze I | cpp | 2025-08-06 |
-| CPP | 항해 | Silver V | 32200 | 2025-08-06 |
+| 32200 | 항해 | Silver V | cpp | 2025-08-06 |
 | 1260 | DFS와 BFS | Silver II | cpp | 2025-08-05 |
 | 5545 | 최고의 피자 | Silver III | cpp | 2025-08-04 |
 | 1812 | 사탕 | Silver IV | cpp | 2025-08-03 |
