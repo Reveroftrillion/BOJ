@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 18156 | Black and White | Bronze I | cpp | 2025-08-11 |
 | 7466 | Honey and Milk Land | Bronze I | cpp | 2025-08-10 |
 | 31824 | 근로장학생 | Silver III | cpp | 2025-08-09 |
 | 2644 | 촌수 계산 | Silver II | cpp | 2025-08-08 |
