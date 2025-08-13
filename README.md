@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 18269 | Where Am I? | Bronze I | cpp | 2025-08-13 |
 | 3085 | 사탕 게임 | Silver II | cpp | 2025-08-12 |
 | 18156 | Black and White | Bronze I | cpp | 2025-08-11 |
 | 7466 | Honey and Milk Land | Bronze I | cpp | 2025-08-10 |
