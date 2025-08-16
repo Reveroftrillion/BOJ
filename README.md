@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 5171 | Fingerprints | Bronze I | cpp | 2025-08-16 |
 | 14173 | Square Pasture | Bronze III | cpp | 2025-08-15 |
 | 25371 | k진수 정수의 자릿수 나누기 | Bronze I | cpp | 2025-08-14 |
 | 18269 | Where Am I? | Bronze I | cpp | 2025-08-13 |
