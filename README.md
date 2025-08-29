@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 1247 | 부호 | Bronze III | cpp | 2025-08-29 |
 | 13878 | FBI Universal Control Numbers | Silver V | cpp | 2025-08-28 |
 | 33923 | 인경호 울타리 공사 | Bronze I | cpp | 2025-08-28 |
 | 22815 | Exploring Caves | Bronze II | cpp | 2025-08-28 |
