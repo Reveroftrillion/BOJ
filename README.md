@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 25329 | 학생별 통화 요금 계산 | Silver IV | cpp | 2025-08-31 |
 | 3036 | 링 | Silver IV | cpp | 2025-08-30 |
 | 1247 | 부호 | Bronze III | cpp | 2025-08-29 |
 | 13878 | FBI Universal Control Numbers | Silver V | cpp | 2025-08-28 |
