@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 6177 | Statistics | Silver V | cpp | 2025-09-05 |
 | 28136 | 원, 탁! | Silver V | cpp | 2025-09-04 |
 | 6511 | Black and white painting | Bronze I | cpp | 2025-09-03 |
 | 25372 | 성택이의 은밀한 비밀번호 | Bronze V | cpp | 2025-09-03 |
