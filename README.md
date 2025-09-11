@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 9339 | 마라토너 | Bronze I | cpp | 2025-09-11 |
 | 15151 | Incomplete Book | Bronze III | cpp | 2025-09-10 |
 | 18005 | Even or Odd? | Bronze III | cpp | 2025-09-10 |
 | 4779 | 칸토어 집합 | Silver III | cpp | 2025-09-09 |
