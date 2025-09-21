@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 3787 | Count on Canton | Silver V | cpp | 2025-09-21 |
 | 20254 | Site Score | Bronze V | cpp | 2025-09-19 |
 | 32841 | Welcome Sign | Bronze II | cpp | 2025-09-18 |
 | 10808 | 알파벳 개수 | Bronze IV | cpp | 2025-09-17 |
