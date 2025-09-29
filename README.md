@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 9762 | โรงงานลูกกวาด (Candy Factory) | Silver V | cpp | 2025-09-29 |
 | 1015 | 수열 정렬 | Silver IV | cpp | 2025-09-28 |
 | 10203 | Count Vowels | Bronze III | cpp | 2025-09-27 |
 | 1005 | ACM Craft | Gold III | cpp | 2025-09-26 |
