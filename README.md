@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 27310 | :chino_shock: | Bronze IV | cpp | 2025-10-03 |
 | 1517 | 버블 소트 | Platinum V | cpp | 2025-10-02 |
 | 1331 | 나이트 투어 | Silver IV | cpp | 2025-10-01 |
 | 11203 | Numbers On a Tree | Silver V | cpp | 2025-09-30 |
