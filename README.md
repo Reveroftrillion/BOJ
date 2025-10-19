@@ -2,8 +2,8 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
-| 30490 | Battle Bots | Bronze II | cpp | 2025-10-18 |
 | 30492 | Democratic Naming | Bronze II | cpp | 2025-10-19 |
+| 30490 | Battle Bots | Bronze II | cpp | 2025-10-18 |
 | 9897 | Lamp | Bronze II | cpp | 2025-10-17 |
 | 24817 | Competitive Arcade Basketball | Silver V | cpp | 2025-10-16 |
 | 12852 | 1로 만들기 2 | Gold V | cpp | 2025-10-15 |
