@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 2891 | 카약과 강풍 | Silver IV | cpp | 2025-10-20 |
 | 30492 | Democratic Naming | Bronze II | cpp | 2025-10-19 |
 | 30490 | Battle Bots | Bronze II | cpp | 2025-10-18 |
 | 9897 | Lamp | Bronze II | cpp | 2025-10-17 |
