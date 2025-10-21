@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 7515 | Prehistoric Operating System | Silver IV | cpp | 2025-10-21 |
 | 32372 | 마법의 나침반 | Silver IV | cpp | 2025-10-21 |
 | 2891 | 카약과 강풍 | Silver IV | cpp | 2025-10-20 |
 | 30492 | Democratic Naming | Bronze II | cpp | 2025-10-19 |
