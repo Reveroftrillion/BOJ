@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 4890 | Tiles of Tetris, NOT! | Bronze II | cpp | 2025-10-24 |
 | 20499 | Darius 한타 안 함? | Bronze IV | cpp | 2025-10-22 |
 | 7515 | Prehistoric Operating System | Silver IV | cpp | 2025-10-21 |
 | 32372 | 마법의 나침반 | Silver IV | cpp | 2025-10-21 |
