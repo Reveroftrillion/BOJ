@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 5991 | Papaya Jungle | Silver IV | cpp | 2025-10-25 |
 | 4291 | Brownie Points I | Bronze I | cpp | 2025-10-24 |
 | 4890 | Tiles of Tetris, NOT! | Bronze II | cpp | 2025-10-24 |
 | 6335 | Date Bugs | Bronze I | cpp | 2025-10-23 |
