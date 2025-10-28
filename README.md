@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 1793 | 타일링 | Silver II | cpp | 2025-10-28 |
 | 1159 | 농구 경기 | Bronze II | cpp | 2025-10-27 |
 | 15233 | Final Score | Silver IV | cpp | 2025-10-26 |
 | 5991 | Papaya Jungle | Silver IV | cpp | 2025-10-25 |
