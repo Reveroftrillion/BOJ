@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 31047 | Warehouse | Silver V | cpp | 2025-11-02 |
 | 15406 | Check the Check | Bronze II | cpp | 2025-11-01 |
 | 32652 | 아카라카 2 | Bronze III | cpp | 2025-10-31 |
 | 22864 | 피로도 | Bronze II | cpp | 2025-10-30 |
