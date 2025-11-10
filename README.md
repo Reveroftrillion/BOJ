@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 15681 | 트리와 쿼리 | Gold V | cpp | 2025-11-10 |
 | 15516 | Array Manipulation at Moloco (Easy) | Silver V | cpp | 2025-11-10 |
 | 20376 | Counting Monuments | Silver V | cpp | 2025-11-09 |
 | 28238 | 정보 선생님의 야망 | Silver V | cpp | 2025-11-08 |
