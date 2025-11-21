@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 21347 | Keyboardd | Bronze I | cpp | 2025-11-21 |
 | 25246 | Brexiting and Brentering | Bronze III | cpp | 2025-11-20 |
 | 2098 | 외판원 순회 | Gold I | cpp | 2025-11-19 |
 | 10971 | 외판원 순회 2 | Silver II | cpp | 2025-11-18 |
