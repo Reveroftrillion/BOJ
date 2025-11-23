@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 9347 | 울타리 | Gold II | cpp | 2025-11-23 |
 | 2635 | 수 이어가기 | Silver V | cpp | 2025-11-22 |
 | 21347 | Keyboardd | Bronze I | cpp | 2025-11-21 |
 | 25246 | Brexiting and Brentering | Bronze III | cpp | 2025-11-20 |
