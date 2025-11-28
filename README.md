@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 24608 | Average Character | Bronze II | cpp | 2025-11-28 |
 | 6766 | Big Bang Secrets | Bronze II | cpp | 2025-11-29 |
 | 32216 | 찬물 샤워 | Bronze III | cpp | 2025-11-27 |
 | 1305 | 광고 | Platinum IV | cpp | 2025-11-26 |
