@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 4108 | 지뢰찾기 | Silver V | cpp | 2025-11-30 |
 | 6766 | Big Bang Secrets | Bronze II | cpp | 2025-11-29 |
 | 24608 | Average Character | Bronze II | cpp | 2025-11-28 |
 | 32216 | 찬물 샤워 | Bronze III | cpp | 2025-11-27 |
