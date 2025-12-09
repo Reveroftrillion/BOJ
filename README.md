@@ -3,7 +3,6 @@
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
 | 18111 | 마인크래프트 | Silver II | cpp | 2025-12-09 |
-| 13133 | Aurora Princess | Silver V | cpp | 2025-09-20 |
 | 25327 | 다중 항목 선호도 조사 (Large) | Silver III | cpp | 2025-12-08 |
 | 12759 | 틱! 택! 토! | Silver V | cpp | 2025-12-07 |
 | 15501 | 부당한 퍼즐 | Silver II | cpp | 2025-12-06 |
@@ -93,6 +92,7 @@
 | 13458 | 시험 감독 | Bronze II | cpp | 2025-09-23 |
 | 18258 | 큐 2 | Silver IV | cpp | 2025-09-22 |
 | 3787 | Count on Canton | Silver V | cpp | 2025-09-21 |
+| 13133 | Aurora Princess | Silver V | cpp | 2025-09-20 |
 | 20254 | Site Score | Bronze V | cpp | 2025-09-19 |
 | 32841 | Welcome Sign | Bronze II | cpp | 2025-09-18 |
 | 10808 | 알파벳 개수 | Bronze IV | cpp | 2025-09-17 |
