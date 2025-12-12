@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 23895 | Allocation | Silver V | cpp | 2025-12-12 |
 | 15585 | 고장난 시계 | Silver V | cpp | 2025-12-11 |
 | 32752 | 수열이에요? | Silver V | cpp | 2025-12-10 |
 | 17783 | Breaking Branches | Bronze II | cpp | 2025-12-10 |
