@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 32711 | 홀수로 나눠라! 짝수로 나눠라! | Silver III | cpp | 2025-12-14 |
 | 18881 | Social Distancing II | Silver IV | cpp | 2025-12-13 |
 | 23895 | Allocation | Silver V | cpp | 2025-12-12 |
 | 15585 | 고장난 시계 | Silver V | cpp | 2025-12-11 |
