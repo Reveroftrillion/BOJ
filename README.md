@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 11060 | 점프 점프 | Silver II | cpp | 2025-12-15 |
 | 32711 | 홀수로 나눠라! 짝수로 나눠라! | Silver III | cpp | 2025-12-14 |
 | 18881 | Social Distancing II | Silver IV | cpp | 2025-12-13 |
 | 23895 | Allocation | Silver V | cpp | 2025-12-12 |
