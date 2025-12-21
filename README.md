@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 34326 | How to escape the maze | Silver II | cpp | 2025-12-22 |
 | 8061 | Bitmap | Silver II | cpp | 2025-12-23 |
 | 23717 | Painter | Silver IV | cpp | 2025-12-21 |
 | 29693 | 포스터 만들기 | Silver IV | cpp | 2025-12-20 |
