@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 1931 | 회의실 배정 | Gold V | cpp | 2025-12-25 |
 | 23925 | Retype | Bronze III | cpp | 2025-12-24 |
 | 8061 | Bitmap | Silver II | cpp | 2025-12-23 |
 | 34326 | How to escape the maze | Silver II | cpp | 2025-12-22 |
