@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 14687 | High Tide, Low Tide | Silver V | cpp | 2025-12-27 |
 | 11264 | Logical Functions: AND-OR | Bronze I | cpp | 2025-12-26 |
 | 25595 | 86 ─에이티식스─ 2 | Bronze I | cpp | 2025-12-26 |
 | 1931 | 회의실 배정 | Gold V | cpp | 2025-12-25 |
