@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 32627 | 문자열 줄이기 | Silver IV | cpp | 2025-12-29 |
 | 22614 | Infected Computer | Silver V | cpp | 2025-12-28 |
 | 14687 | High Tide, Low Tide | Silver V | cpp | 2025-12-27 |
 | 11264 | Logical Functions: AND-OR | Bronze I | cpp | 2025-12-26 |
