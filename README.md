@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 25996 | Equalising Audio | Silver III | cpp | 2026-01-03 |
 | 10495 | Choosing Numbers | Silver IV | cpp | 2026-01-02 |
 | 33574 | 끊임없는 정렬과 창조함으로 | Silver IV | cpp | 2026-01-01 |
 | 5800 | 성적 통계 | Silver V | cpp | 2025-12-31 |
