@@ -3,6 +3,37 @@
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
 | 14425 | 문자열 집합 | Silver IV | cpp | 2026-01-26 |
+| 14684 | Favourite Times | Silver III | cpp | 2026-01-04 |
+| 25996 | Equalising Audio | Silver III | cpp | 2026-01-03 |
+| 10495 | Choosing Numbers | Silver IV | cpp | 2026-01-02 |
+| 33574 | 끊임없는 정렬과 창조함으로 | Silver IV | cpp | 2026-01-01 |
+| 5800 | 성적 통계 | Silver V | cpp | 2025-12-31 |
+| 14194 | Grades | Bronze I | cpp | 2025-12-31 |
+| 9654 | 나부 함대 데이터 | Bronze V | cpp | 2025-12-30 |
+| 32627 | 문자열 줄이기 | Silver IV | cpp | 2025-12-29 |
+| 22614 | Infected Computer | Silver V | cpp | 2025-12-28 |
+| 14687 | High Tide, Low Tide | Silver V | cpp | 2025-12-27 |
+| 11264 | Logical Functions: AND-OR | Bronze I | cpp | 2025-12-26 |
+| 25595 | 86 ─에이티식스─ 2 | Bronze I | cpp | 2025-12-26 |
+| 1931 | 회의실 배정 | Gold V | cpp | 2025-12-25 |
+| 23925 | Retype | Bronze III | cpp | 2025-12-24 |
+| 8061 | Bitmap | Silver II | cpp | 2025-12-23 |
+| 34326 | How to escape the maze | Silver II | cpp | 2025-12-22 |
+| 23717 | Painter | Silver IV | cpp | 2025-12-21 |
+| 29693 | 포스터 만들기 | Silver IV | cpp | 2025-12-20 |
+| 6165 | Game of Lines | Silver IV | cpp | 2025-12-19 |
+| 13192 | Router 1 | Bronze I | cpp | 2025-12-18 |
+| 21221 | Bold | Bronze I | cpp | 2025-12-18 |
+| 30328 | Java Warriors | Bronze V | cpp | 2025-12-17 |
+| 21736 | 헌내기는 친구가 필요해 | Silver II | cpp | 2025-12-16 |
+| 11060 | 점프 점프 | Silver II | cpp | 2025-12-15 |
+| 32711 | 홀수로 나눠라! 짝수로 나눠라! | Silver III | cpp | 2025-12-14 |
+| 18881 | Social Distancing II | Silver IV | cpp | 2025-12-13 |
+| 23895 | Allocation | Silver V | cpp | 2025-12-12 |
+| 15585 | 고장난 시계 | Silver V | cpp | 2025-12-11 |
+| 32752 | 수열이에요? | Silver V | cpp | 2025-12-10 |
+| 17783 | Breaking Branches | Bronze II | cpp | 2025-12-10 |
+| 18406 | 럭키 스트레이트 | Bronze II | cpp | 2025-12-10 |
 | 18111 | 마인크래프트 | Silver II | cpp | 2025-12-09 |
 | 25327 | 다중 항목 선호도 조사 (Large) | Silver III | cpp | 2025-12-08 |
 | 12759 | 틱! 택! 토! | Silver V | cpp | 2025-12-07 |
