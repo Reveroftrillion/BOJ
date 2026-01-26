@@ -2,6 +2,7 @@
 
 | 번호 | 제목 | 난이도 | 언어 | 날짜 |
 |:---:|:---|:---:|:---:|:---|
+| 1269 | 대칭 차집합 | Silver IV | cpp | 2026-01-26 |
 | 14425 | 문자열 집합 | Silver IV | cpp | 2026-01-26 |
 | 14684 | Favourite Times | Silver III | cpp | 2026-01-04 |
 | 25996 | Equalising Audio | Silver III | cpp | 2026-01-03 |
